@@ -1,2 +1,4 @@
 ethio_fintech_env
 .env
+__pycache__
+data
