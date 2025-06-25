@@ -34,7 +34,7 @@ def evaluate_model(checkpoint: str, dataset: DatasetDict) -> dict:
     results = seqeval.compute(predictions=pred_labels, references=true_labels)
     return results
 
- def compare_models(checkpoints: list, dataset: DatasetDict) -> dict:
+def compare_models(checkpoints: list, dataset: DatasetDict) -> dict:
     """Compare multiple checkpoints and return evaluation metrics."""
     metrics = {}
     for ckpt in checkpoints:
