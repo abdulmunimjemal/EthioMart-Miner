@@ -2,3 +2,9 @@ telethon
 pandas 
 pyarrow 
 python-dotenv
+transformers
+datasets
+torch
+shap
+lime
+seqeval
