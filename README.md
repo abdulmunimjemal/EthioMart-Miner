@@ -1,16 +1,18 @@
 # Amharic Ecommerce Data Extractor
 
-A Python-based pipeline for scraping Amharic Telegram channels, preprocessing text, labeling data for Named Entity Recognition (NER), fine-tuning and comparing multilingual NER models, interpreting model predictions, and generating vendor scorecards for micro-lending.
+A comprehensive Python pipeline for extracting, processing, and analyzing Amharic-language ecommerce data from Telegram channels. The project supports end-to-end workflows including data scraping, text preprocessing, NER data labeling, multilingual model fine-tuning, model evaluation, interpretability, and vendor analytics for micro-lending applications.
 
-## Features
-- **Task 1:** Data ingestion from Telegram channels (Telethon).
-- **Task 2:** Amharic text preprocessing (normalization, punctuation & emoji removal).
-- **Task 3:** Fine-tune NER models (XLM-Roberta, bert-tiny-amharic, etc.) using Hugging Face.
-- **Task 4:** Model comparison & selection based on evaluation metrics.
-- **Task 5:** Model interpretability with SHAP and LIME.
-- **Task 6:** Vendor scorecard generation (posting frequency, engagement, pricing, lending score).
+## Key Capabilities
+- **Data Collection:** Scrape Amharic Telegram channels using Telethon.
+- **Text Preprocessing:** Normalize Amharic text, remove punctuation and emojis.
+- **NER Model Training:** Fine-tune models (XLM-Roberta, bert-tiny-amharic, etc.) with Hugging Face for Named Entity Recognition.
+- **Model Evaluation:** Compare and select models based on robust evaluation metrics.
+- **Interpretability:** Analyze model predictions using SHAP and LIME.
+- **Vendor Analytics:** Generate vendor scorecards (activity, engagement, pricing, lending suitability).
 
-## Installation
+## Getting Started
+### Installation
+Clone the repository and set up the environment:
 ```bash
 git clone https://github.com/yohannesalex/Amharic_Ecommerce_Data_Extractor.git
 cd Amharic_Ecommerce_Data_Extractor
@@ -19,38 +21,38 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-## Usage
-- **Task 1 & 2** (scraping and preprocessing):
+### Usage
+- **Data Ingestion & Preprocessing:**
   ```bash
   python -m src.main
   ```
-- **Task 2** (prepare CoNLL data):
+- **CoNLL Data Preparation:**
   ```bash
   python -m src.labeling.conll_utils
   ```
-- **Task 3** (fine-tune NER):
+- **NER Model Fine-tuning:**
   ```bash
   python -m src.models.ner_model_trainer
   ```
-- **Task 4** (compare models):
-  Use the functions in `src/models/model_comparison.py` in a script or notebook.
-- **Task 5** (interpretability):
-  Use `src/models/interpretability.py` in a script or notebook.
-- **Task 6** (vendor scorecards):
-  Use `src/models/vendor_scorecard.py` in a script or notebook.
+- **Model Comparison:**
+  Use the functions in `src/models/model_comparison.py` within your scripts or notebooks.
+- **Model Interpretability:**
+  Use `src/models/interpretability.py` in your analysis workflows.
+- **Vendor Scorecard Generation:**
+  Use `src/models/vendor_scorecard.py` for vendor analytics.
 
-## Directory Structure
+## Project Structure
 ```
-configs/             # Telegram API configuration
-data/                # Raw, processed, labeled data
-src/                 # Source code modules
-notebooks/           # Jupyter notebooks for exploration and tutorials
-models/              # Trained model checkpoints and utilities
-reports/             # Final reports and figures
-``` 
+configs/     # Telegram API credentials and settings
+data/        # Raw, processed, and labeled datasets
+src/         # Core source code modules
+notebooks/   # Jupyter notebooks for exploration and tutorials
+models/      # Trained model checkpoints and scripts
+reports/     # Reports and visualizations
+```
 
-## Author
-[yohannesalex](https://github.com/yohannesalex)
+## Maintainer
+[abdulmunimjemal](https://github.com/abdulmunimjemal)
 
 ## License
 MIT License
