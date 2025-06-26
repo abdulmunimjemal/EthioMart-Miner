@@ -1,4 +1,4 @@
-# Amharic Ecommerce Data Extractor
+# EthioMart Data Pipeline
 
 A comprehensive Python pipeline for extracting, processing, and analyzing Amharic-language ecommerce data from Telegram channels. The project supports end-to-end workflows including data scraping, text preprocessing, NER data labeling, multilingual model fine-tuning, model evaluation, interpretability, and vendor analytics for micro-lending applications.
 
