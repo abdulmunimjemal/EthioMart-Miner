@@ -14,8 +14,8 @@ A comprehensive Python pipeline for extracting, processing, and analyzing Amhari
 ### Installation
 Clone the repository and set up the environment:
 ```bash
-git clone https://github.com/yohannesalex/Amharic_Ecommerce_Data_Extractor.git
-cd Amharic_Ecommerce_Data_Extractor
+git clone https://github.com/abdulmunimjemal/EthioMart-Miner/
+cd EthioMart-Miner
 python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
